@@ -24,6 +24,10 @@ $(document).ready(function() {
 		var side3 = parseInt($("input#side3").val());
 		var result = triangles(side1, side2, side3);
 
+		$(".side1").text(side1);
+		$(".side2").text(side2);
+		$(".side3").text(side3);
+
 		$(".triangle").text(result);
 
 		$("#result").show();
